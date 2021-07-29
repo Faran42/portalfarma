@@ -5,7 +5,8 @@ export const Container = styled.div`
   
   background-color: #34b7eb;
 
-  width: 90%;
+  width: 95vw;
+  height: 10vh;
  
   margin: 0;
 
@@ -14,15 +15,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  border-radius: 20px;
+  border-radius: 2vh;
 
   margin-top: 1%;
-  margin-left: 5%;
+  margin-left: 2.5vw;
   padding: 15px;
  
 `;
 
 export const Text = styled.h1`
-  font-size: 30px;
+  font-size: 4vh;
   color: #fff;
 `;

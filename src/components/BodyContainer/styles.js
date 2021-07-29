@@ -3,18 +3,18 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #ffffff;
 
-  width: 90%;
-  height: 900px;
+  width: 95vw;
+  height: 80vh;
 
   display: flex;
 
   justify-content: center;
   align-items: center;
 
-  margin-left: 5%;
-  margin-top: 1%;
+  margin-left: 2.5vw;
+  margin-top: 1vh;
 
-  border-radius: 20px;
+  border-radius: 2vh;
 
 `;
 

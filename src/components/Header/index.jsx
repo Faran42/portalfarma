@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../providers/auth';
 
 import { Container, Text } from './styles'
 
 
 export function Header() {
-  console.log('header: ',window.username)
+  const { user } = useContext(AuthContext)
+
+  console.log('User.name: ', user.name)
+
   return(
     <Container>
       <Text>
-        {window.username}
+        {user.name}
       </Text>
     </Container>
   )

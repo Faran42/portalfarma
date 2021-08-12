@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { AuthContext } from '../../providers/auth';
 
 const clientId = "284036896748-md8b284t36cfe91t6ib2rufbbbh96hdu.apps.googleusercontent.com";
 
-function Login() {
+function Login({ credentials, setCredentials}) {
+
+    const { user, setUser } = useContext(AuthContext)
 
     const [showloginButton, setShowloginButton] = useState(true);
+
     const [showlogoutButton, setShowlogoutButton] = useState(false);
+
     const onLoginSuccess = (res) => {
         console.log('Login Success:', res.profileObj.name);
-        window.username = res.profileObj;
-        console.log('Config: ',window.username)
+        setUser({ name : res.profileObj.name });
+        console.log('User: ',user)
         setShowloginButton(false);
         setShowlogoutButton(true);
     };
@@ -31,7 +36,7 @@ function Login() {
             { showloginButton ?
                 <GoogleLogin
                     clientId={clientId}
-                    buttonText="Sign In"
+                    buttonText="Entre com sua conta Google"
                     onSuccess={onLoginSuccess}
                     onFailure={onLoginFailure}
                     cookiePolicy={'single_host_origin'}

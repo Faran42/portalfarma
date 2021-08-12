@@ -2,23 +2,13 @@ import React from 'react';
 
 import { Container, Text } from './styles'
 
+
 export function Header() {
+  console.log('header: ',window.username)
   return(
     <Container>
       <Text>
-        TESTE |
-      </Text>
-      <Text>
-        TESTE |
-      </Text>
-      <Text>
-        TESTE |
-      </Text>
-      <Text>
-        TESTE |
-      </Text>
-      <Text>
-        TESTE
+        {window.username}
       </Text>
     </Container>
   )

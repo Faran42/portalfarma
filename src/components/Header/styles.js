@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
   
   background-color: #34b7eb;
 
@@ -20,7 +19,6 @@ export const Container = styled.div`
   margin-top: 1%;
   margin-left: 2.5vw;
   padding: 15px;
- 
 `;
 
 export const Text = styled.h1`

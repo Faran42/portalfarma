@@ -11,10 +11,10 @@ export const Container = styled.div`
 
   display: flex;
 
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
-  border-radius: 2vh;
+  border-radius: 5vw;
 
   margin-top: 1%;
   margin-left: 2.5vw;
@@ -24,4 +24,11 @@ export const Container = styled.div`
 export const Text = styled.h1`
   font-size: 4vh;
   color: #fff;
+`;
+
+export const Avatar = styled.img`
+  width: 3em;
+  height: 3em;
+
+  border-radius: 50%;
 `;

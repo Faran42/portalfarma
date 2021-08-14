@@ -1,19 +1,21 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../providers/auth';
 
-import { Container, Text } from './styles'
+import { Container, Text, Avatar } from './styles'
 
 
 export function Header() {
-  const { user } = useContext(AuthContext)
+  const username = sessionStorage.getItem('givenName')
+  const avatarUrl = sessionStorage.getItem('imageUrl')
 
-  console.log('User.name: ', user.name)
 
+  console.log(avatarUrl)
   return(
     <Container>
       <Text>
-        {user.name}
+        {username}
       </Text>
+      <Avatar src={avatarUrl}/>
     </Container>
   )
 }

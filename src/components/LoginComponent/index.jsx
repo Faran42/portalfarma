@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import { AuthContext } from '../../providers/auth';
 
 const clientId = "284036896748-md8b284t36cfe91t6ib2rufbbbh96hdu.apps.googleusercontent.com";
 
@@ -22,7 +21,6 @@ function Login({ credentials, setCredentials }) {
 
     setShowloginButton(false);
     setShowlogoutButton(true);
-
 
   };
 

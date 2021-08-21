@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from "react";
 
-import { Container } from './styles'
+import { Container, Card, Title } from "./styles";
 
-import { Inputs } from './components/Inputs'
+import { Inputs } from "./components/Inputs";
 
 export function Cadastro() {
-  return(
+  const [medicamento, setMedicamento] = useState("");
+  return (
     <Container>
-      <Inputs  label='Medicamento' />
-      <Inputs  label='Médico' />
-      <Inputs  label='Quantidade' />
-      <Inputs  label='Data (Requisição)' />
-      <Inputs  label='Telefone' />
-      
+      <Card>
+        <Title>CADASTRO DE REQUISIÇÃO</Title>
+        <Inputs
+          type="text"
+          label="Medicamento"
+          inputState={medicamento}
+          setInputState={setMedicamento}
+        />
+        <Inputs type="text" label="Médico" />
+        <Inputs type="number" label="Quantidade" />
+        <Inputs type="date" label="Requisição" />
+        <Inputs type="phone" label="Telefone" />
+      </Card>
     </Container>
-  )
-
+  );
 }

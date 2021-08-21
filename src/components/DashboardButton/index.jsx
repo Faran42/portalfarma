@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container, Title, Link } from "./styles";
 
 export function DashboardButton({ href, title }) {
   return (
-    <Container>
-      <a href={href} >
-        {title}
-      </a>
-    </Container>
-  )  
+    <Link href={href}>
+      <Container>
+        <Title>{title}</Title>
+      </Container>
+    </Link>
+  );
 }
-

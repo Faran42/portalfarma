@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Label = styled.div`
-  font-size: 2vw;
+  font-size: 4vh;
 
   color: #fff;
 

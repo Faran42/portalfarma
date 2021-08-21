@@ -9,10 +9,27 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: gold;
+  background-color: #41f250;
 
   border-radius: 5vh;
 
   margin-bottom: 5%;
+
+  &:hover {
+    background-color: #209629;
+  }
 `;
+
+export const Title = styled.h1`
+  font-size: 80px;
+  color: #fff;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  
+  
+`;
+
+
 

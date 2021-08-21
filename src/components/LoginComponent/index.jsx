@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
 const clientId = "284036896748-md8b284t36cfe91t6ib2rufbbbh96hdu.apps.googleusercontent.com";
 
 function Login({ credentials, setCredentials }) {
-
+  const history = useHistory();
   const [showloginButton, setShowloginButton] = useState(true);
 
   const [showlogoutButton, setShowlogoutButton] = useState(false);
@@ -21,6 +22,7 @@ function Login({ credentials, setCredentials }) {
 
     setShowloginButton(false);
     setShowlogoutButton(true);
+    history.push("/dashboard");
 
   };
 

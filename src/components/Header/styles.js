@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   display: flex;
 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   border-radius: 5vw;
@@ -27,8 +27,8 @@ export const Text = styled.h1`
 `;
 
 export const Avatar = styled.img`
-  width: 3em;
-  height: 3em;
+  width: 4.5em;
+  height: 4.5em;
 
   border-radius: 50%;
 `;

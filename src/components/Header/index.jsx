@@ -11,7 +11,7 @@ export function Header() {
   return(
     <Container>
       <Text>
-        {username}
+        Olá, {username}
       </Text>
       <Avatar src={avatarUrl}/>
     </Container>

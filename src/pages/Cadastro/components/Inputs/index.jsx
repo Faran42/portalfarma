@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import { Container, Input, Label } from "./styles";
 
-export function Inputs({ label, type, inputState, setInputState }) {
+export function Inputs({ label, type, inputState, setInputState, ph }) {
   function handleOnChange(event) {
     setInputState(event.target.value);
   }
@@ -15,7 +15,7 @@ export function Inputs({ label, type, inputState, setInputState }) {
   return (
     <Container>
       <Label>{label}:</Label>
-      <Input type={type} onChange={(e) => handleOnChange(e)} />
+      <Input type={type} onChange={(e) => handleOnChange(e)} placeholder={ph} />
     </Container>
   );
 }

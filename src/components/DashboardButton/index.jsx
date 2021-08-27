@@ -4,10 +4,10 @@ import { Container, Title, Link } from "./styles";
 
 export function DashboardButton({ href, title }) {
   return (
-    <Link href={href}>
-      <Container>
+    <Container>
+      <Link href={href}>
         <Title>{title}</Title>
-      </Container>
-    </Link>
+      </Link>
+    </Container>
   );
 }

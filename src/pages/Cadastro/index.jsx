@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-import { Container, Card, Title } from "./styles";
+import { Container, Card, Title, Wrapper } from "./styles";
 
 import { Inputs } from "./components/Inputs";
 import { Header } from "../../components/Header";
+import { GenericButton } from "../../components/GenericButton";
 
 export function Cadastro() {
   const [medicamento, setMedicamento] = useState("");
@@ -52,6 +53,10 @@ export function Cadastro() {
             setInputState={setPhone}
             ph="Informe seu telefone"
           />
+          <Wrapper>
+            <GenericButton href='#' title="Cadastrar" type={true} />
+            <GenericButton href='#' title="Limpar" type={false} />
+          </Wrapper>
         </Card>
       </Container>
     </>

@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
-  width: 18vw;
-  height: 10vh;
+  width: 14vw;
+  height: 8vh;
 
   display: flex;
 
@@ -11,7 +11,16 @@ export const Container = styled.div`
 
   transition: 0.8s;
 
-  background-color: #4578F7;
+  ${({ buttonbgc }) => buttonbgc ?
+    css` 
+      background: rgb(103,223,87);
+      background: linear-gradient(180deg, rgba(103,223,87,1) 24%, rgba(45,217,114,1) 53%, rgba(19,242,146,1) 85%);
+  `:
+    css`
+      background: rgb(219,62,45);
+      background: linear-gradient(27deg, rgba(219,62,45,1) 24%, rgba(231,44,11,1) 53%, rgba(236,3,3,1) 85%);
+    `
+  };
 
   border-radius: 5vh;
 

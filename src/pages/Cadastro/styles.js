@@ -30,7 +30,7 @@ export const Card = styled.div`
   width: 55vw;
   height: 75vh;  
   background: rgb(82,155,255);
-  background: linear-gradient(356deg, rgba(82,155,255,1) 24%, rgba(45,176,217,1) 53%, rgba(19,203,242,1) 85%);
+  background: linear-gradient(356deg, rgba(82,155,255,1) 24%, rgba(45,176,217,1) 53%, rgba(19,160,242,1) 85%);
 
   display: flex;
 

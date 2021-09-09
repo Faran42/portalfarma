@@ -47,7 +47,7 @@ export const Card = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 46px;
+  font-size: 35px;
   color: #fff;
 
   -webkit-text-stroke-width: 0.15vh;
@@ -55,7 +55,7 @@ export const Title = styled.h1`
 
   text-align: center;
 
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 
 `;
 

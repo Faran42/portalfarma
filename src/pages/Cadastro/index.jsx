@@ -4,9 +4,26 @@ import { Container, Card, Title, Wrapper } from "./styles";
 
 import { Inputs } from "./components/Inputs";
 import { Header } from "../../components/Header";
-import { GenericButton } from "../../components/GenericButton";
+import { Button } from "./components/Button";
+
+import api from '../../config/api';
 
 export function Cadastro() {
+
+   function handleClick() {
+    
+    api.post('requisicao', {
+      id_cadastro: 77,
+      medicamento: medicamento,
+      medico: medico,
+      quantidade: quantidade,
+      id_login: sessionStorage.getItem('googleId'),
+      create_date: reqDate
+    }).then(response => {
+      console.log(response)
+    })
+  }
+
   const [medicamento, setMedicamento] = useState("");
   const [medico, setMedico] = useState("");
   const [quantidade, setQuantidade] = useState(0);
@@ -54,8 +71,11 @@ export function Cadastro() {
             ph="Informe seu telefone"
           />
           <Wrapper>
-            <GenericButton href='#' title="Cadastrar" type={true} />
-            <GenericButton href='#' title="Limpar" type={false} />
+            <button onClick={handleClick}>Teste</button>
+
+
+            {/* <Button type='submit' title="Cadastrar" type={true} onClick={() => {alert('aaaaaaaaa')}}/>
+            <Button title="Limpar" type={false} /> */}
           </Wrapper>
         </Card>
       </Container>

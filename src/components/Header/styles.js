@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   
-  background: rgb(82,155,255);
-  background: linear-gradient(356deg, rgba(82,155,255,1) 24%, rgba(45,176,217,1) 53%, rgba(19,203,242,1) 85%);
+  background-color: #1306ff;
+  /* background: linear-gradient(356deg, rgba(82,155,255,1) 24%, rgba(45,176,217,1) 53%, rgba(19,203,242,1) 85%); */
 
   width: 100vw;
   height: 6vh;
@@ -48,13 +48,15 @@ export const Wrapper2 = styled.div`
 
 export const Text = styled.h1`
 
-  font-size: 3vh;
+  font-size: 1.25em;
   color: #fff;
 
-  -webkit-text-stroke-width: 0.1vh;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #000;
 
   font-weight: bold;
+
+  margin-right: 5%;
   
 `;
 

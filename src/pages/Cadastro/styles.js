@@ -29,8 +29,7 @@ export const Card = styled.div`
 
   width: 55vw;
   height: 75vh;  
-  background: rgb(82,155,255);
-  background: linear-gradient(356deg, rgba(82,155,255,1) 24%, rgba(45,176,217,1) 53%, rgba(19,160,242,1) 85%);
+  background-color: #1306ff;
 
   display: flex;
 
@@ -50,8 +49,7 @@ export const Title = styled.h1`
   font-size: 35px;
   color: #fff;
 
-  -webkit-text-stroke-width: 0.15vh;
-  -webkit-text-stroke-color: #000;
+ 
 
   text-align: center;
 

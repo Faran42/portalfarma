@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 94vh;
 
   background-color: transparent;
 
   display: flex;
-
-  margin-top: 3%;
+  justify-content: center;
   align-items: center;
-
-  flex-direction: column;
 `;
 
 export const Wrapper = styled.div`
@@ -27,9 +25,8 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
 
-  width: 55vw;
-  height: 75vh;  
-  background-color: #1306ff;
+  width: 50%;
+  background-color: #fff;
 
   display: flex;
 
@@ -38,16 +35,19 @@ export const Card = styled.div`
 
   flex-direction: column;
 
+  padding: 2% 0;
+
   border-radius: 30px;
 
-  box-shadow: 5px 5px rgba(30,30,30,0.3);
+  box-shadow: 5px 5px rgba(30,30,30,0.6);
 
   
 `;
 
 export const Title = styled.h1`
   font-size: 35px;
-  color: #fff;
+  color: #000;
+  font-weight: bold;
 
  
 

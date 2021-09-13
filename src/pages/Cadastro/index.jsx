@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, Alert } from "react";
 
 import { Container, Card, Title, Wrapper } from "./styles";
 
 import { Inputs } from "./components/Inputs";
 import { Header } from "../../components/Header";
-import { Button } from "./components/Button";
+import { Button } from 'reactstrap';
 
 import api from '../../config/api';
 
@@ -71,7 +71,9 @@ export function Cadastro() {
             ph="Informe seu telefone"
           />
           <Wrapper>
-            <button onClick={handleClick}>Teste</button>
+            
+            <Button color="success" onClick={handleClick}>Cadastrar</Button>
+            <Button color="danger" onClick={() => alert("teste")}>Danger</Button>
 
 
             {/* <Button type='submit' title="Cadastrar" type={true} onClick={() => {alert('aaaaaaaaa')}}/>

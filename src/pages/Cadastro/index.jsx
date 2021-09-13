@@ -1,4 +1,4 @@
-import React, { useState, Alert } from "react";
+import React, { useState } from "react";
 
 import { Container, Card, Title, Wrapper } from "./styles";
 
@@ -72,8 +72,8 @@ export function Cadastro() {
           />
           <Wrapper>
             
-            <Button color="success" onClick={handleClick}>Cadastrar</Button>
-            <Button color="danger" onClick={() => alert("teste")}>Danger</Button>
+            <Button color="danger" style={{ fontSize: 30 }} onClick={() => alert("teste")}>Limpar</Button>
+            <Button color="success" style={{ fontSize: 30 }} onClick={handleClick}>Cadastrar</Button>
 
 
             {/* <Button type='submit' title="Cadastrar" type={true} onClick={() => {alert('aaaaaaaaa')}}/>

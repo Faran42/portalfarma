@@ -5,6 +5,27 @@ import { Header } from "../../components/Header";
 
 import { Table } from "reactstrap";
 
+const apiResponse = [
+  {
+    medicamento: "Dipirona",
+    medico: "Dr. Genivaldo",
+    quantidade: 5,
+    requisicao: "21-05-21",
+  },
+  {
+    medicamento: "Aspirina",
+    medico: "Dr. Laércio",
+    quantidade: 2,
+    requisicao: "06-06-21",
+  },
+  {
+    medicamento: "Activia",
+    medico: "Dr. Laravel",
+    quantidade: 112,
+    requisicao: "01-01-21",
+  },
+];
+
 export function Requisicoes() {
   return (
     <>
@@ -14,30 +35,25 @@ export function Requisicoes() {
           <thead>
             <tr>
               <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th>Medicamento</th>
+              <th>Médico</th>
+              <th>Quantidade</th>
+              <th>Requisição</th>
             </tr>
           </thead>
+
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {apiResponse.map((item, index) => {
+              return (
+                <tr>
+                  <th scope="row">{index + 1}</th>
+                  <td>{item.medicamento}</td>
+                  <td>{item.medico}</td>
+                  <td>{item.quantidade}</td>
+                  <td>{item.requisicao}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </Table>
       </Container>

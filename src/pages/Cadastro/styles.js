@@ -57,3 +57,11 @@ export const Title = styled.h1`
 
 `;
 
+export const ButtonLabel = styled.h1`
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+
+  text-align: center;
+`;
+

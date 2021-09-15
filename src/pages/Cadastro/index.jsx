@@ -13,7 +13,6 @@ export function Cadastro() {
    function handleClick() {
     
     api.post('requisicao', {
-      id_cadastro: 77,
       medicamento: medicamento,
       medico: medico,
       quantidade: quantidade,

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
 // .. where we make our configurations
-    baseURL: 'https://0f63-138-122-251-241.ngrok.io/'
+    baseURL: 'https://5d06-138-122-251-241.ngrok.io/'
 });
 
 // Where you would set stuff like your 'Authorization' header, etc ...

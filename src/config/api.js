@@ -11,3 +11,4 @@ const api = axios.create({
 // Also add/ configure interceptors && all the other cool stuff
 
 export default api;
+

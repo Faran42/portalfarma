@@ -5,6 +5,9 @@ const api = axios.create({
     baseURL: 'http://localhost:8080/'
 });
 
+
+
+
 // Where you would set stuff like your 'Authorization' header, etc ...
 // api.defaults.headers.common['Authorization'] = 'AUTH TOKEN FROM api';
 

@@ -71,7 +71,7 @@ export function Cadastro() {
           />
           <Wrapper>
             
-            <Button color="danger" style={{ fontSize: 30 }} onClick={() => alert("teste")}>Limpar</Button>
+            <Button color="danger" style={{ fontSize: 30 }} onClick={() => alert("falta implementar a função de limpeza")}>Limpar</Button>
             <Button color="success" style={{ fontSize: 30 }} onClick={handleClick}>Cadastrar</Button>
 
 

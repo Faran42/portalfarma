@@ -61,8 +61,7 @@ export const Text = styled.h1`
 `;
 
 export const Avatar = styled.img`
-  
-  height: 60%;
+  width: 2.5vw;
 
   border-radius: 50%;
 

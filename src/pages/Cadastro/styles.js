@@ -17,9 +17,7 @@ export const Wrapper = styled.div`
   margin-top: 5%;
 
   display: flex;
-
   flex-direction: row;
-
   justify-content: space-around;
 `;
 
@@ -47,9 +45,7 @@ export const Card = styled.div`
 export const Title = styled.h1`
   font-size: 35px;
   color: #000;
-  font-weight: bold;
-
- 
+  font-weight: bold; 
 
   text-align: center;
 

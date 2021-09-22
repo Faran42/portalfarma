@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import LoginComponent from "../../components/LoginComponent";
 
-import LoginComponent from '../../components/LoginComponent'
+import { Container, Card, Title } from "./styles";
 
 export function Login() {
-  return(
-    <div className="g-signin">
-      <LoginComponent />
-    </div>
-  )
+  return (
+    <Container>
+      <Card>
+        <Title>Portal Farmácia</Title>
+        <LoginComponent />
+      </Card>
+    </Container>
+  );
 }

@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { NavLink } from "../../components/NavLink";
 
 export function Header() {
-  const { signOut, loaded } = useGoogleLogout({});
+  const { signOut } = useGoogleLogout({});
 
   const history = useHistory();
   const username = sessionStorage.getItem("givenName");

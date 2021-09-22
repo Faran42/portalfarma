@@ -2,24 +2,30 @@ import React, { useState } from "react";
 
 import { Container, Card, Title, Wrapper } from "./styles";
 
+import { useHistory } from "react-router-dom";
+
 import { Inputs } from "./components/Inputs";
 import { Header } from "../../components/Header";
 import { Button } from 'reactstrap';
 
+
 import api from '../../config/api';
 
 export function Cadastro() {
+  const history = useHistory();
 
    function handleClick() {
     
-    api.post('requisicao', {
-      medicamento: medicamento,
-      medico: medico,
-      quantidade: quantidade,
-      id_login: sessionStorage.getItem('googleId'),
-      create_date: reqDate
-    }).then(response => {
-      console.log(response)
+     api.post('requisicao', {
+       medicamento: medicamento,
+       medico: medico,
+       quantidade: quantidade,
+       id_login: sessionStorage.getItem('googleId'),
+       create_date: reqDate
+      }).then(response => {
+        alert('Cadastro realizado com sucesso!');
+        console.log(response)
+        history.push("/dashboard");
     })
   }
 

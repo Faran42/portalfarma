@@ -12,7 +12,7 @@ export function Dashboard() {
 
   useEffect(() => {
     const googleId = sessionStorage.getItem("googleId");
-    api.get(`requisicoes/${googleId}`).then((response) => {
+    api.get(`teste/${googleId}`).then((response) => {
       setApiResponse(response.data);
       console.log(response);
     });
@@ -29,9 +29,9 @@ export function Dashboard() {
                 <tr>
                   <th>#</th>
                   <th>Medicamento</th>
-                  <th>Médico</th>
-                  <th>Quantidade</th>
-                  <th>Requisição</th>
+                  <th>valor</th>
+                  <th>telefone</th>
+                  <th>data</th>
                 </tr>
               </thead>
 
@@ -42,9 +42,9 @@ export function Dashboard() {
                     <tr>
                       <th scope="row">{index + 1}</th>
                       <td>{item.medicamento}</td>
-                      <td>{item.medico}</td>
-                      <td>{item.quantidade}</td>
-                      <td>{item.create_date}</td>
+                      <td>{`R$ ${item.valor},00`}</td>
+                      <td>{item.telefone}</td>
+                      <td>{item.data_historico}</td>
                     </tr>
                   );
                 })}
